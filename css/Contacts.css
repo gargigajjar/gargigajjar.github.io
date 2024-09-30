@@ -1,0 +1,51 @@
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contact-item {
+    text-align: center;
+    flex: 1 0 150px;
+    margin: 10px;
+}
+
+.contact-item i {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.contact-item a i.fab.fa-linkedin {
+    color: #0077b5;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-item a:hover {
+    color: #0077b5;
+}
+
+@media (max-width: 768px) {
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        margin: 20px 0;
+        flex: none;
+    }
+}
