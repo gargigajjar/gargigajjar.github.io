@@ -52,7 +52,52 @@ section#contact{
 @media (max-width: 480px) {
 
   section {
-    height: 80vh;
-    padding-top: 35vh;
+    height: 250vh;
+    padding-top: 15vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px; /* Adjust the base font size for smaller screens */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Slightly reduce heading sizes */
+  }
+
+  p {
+    font-size: 0.9rem; /* Make paragraph text smaller */
+  }
+
+  * {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 5px; /* Reduce padding */
+  }
+
+  section {
+    height: 250vh;
+    margin: 10px 0;
+    padding-top: 15vh;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 1.2rem; /* Further reduce heading sizes for very small screens */
+  }
+
+  p {
+    font-size: 0.8rem; /* Make paragraph text smaller */
+  }
+
+  .menu-icon {
+    font-size: 24px; /* Increase icon size for better visibility */
+  }
+
+  section {
+    height: 300vh;
+    margin: 10px 0;
+    padding-top: 15vh;
   }
 }

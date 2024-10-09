@@ -12,14 +12,17 @@
 <body>
     <nav class="navbar">
         <link rel="stylesheet" href="css/NavigrationBar.css">
-        <ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+        <ul id="nav-links" class="nav-links hidden">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    <script src="js/main.js"></script>
     <section id="home">
         <link rel="stylesheet" href="css/Home.css">
         <h1>Gargi Gajjar</h1>
@@ -34,12 +37,12 @@
                 an environment of continuous improvement and collaboration.</p>
             <p id="skillsheader">Key Skills:</p>
             <p id="skills">
-                Programming Languages: Java, C, C++, JavaScript, HTML, CSS
-                <br>Frameworks: Spring Boot, SWT
-                <br>Technologies: Docker, AWS (ECS, EC2, ECR, Lambda, S3), Maven, RDF4J, SPARQL, GraphDB
-                <br>Databases: Oracle, SQL, MySQL
-                <br>Healthcare Data Standards: HL7, FHIR, CCDA, X12, V2
-                <br>Additional Skills: GitHub, JMeter, AI integration with OpenAI's GPT-3.5 API</p>
+                <strong>Programming Languages:</strong> Java, C, C++, JavaScript, HTML, CSS
+                <br><strong>Frameworks:</strong> Spring Boot, SWT
+                <br><strong>Technologies:</strong> Docker, AWS (ECS, EC2, ECR, Lambda, S3), Maven, RDF4J, SPARQL, GraphDB
+                <br><strong>Databases:</strong> Oracle, SQL, MySQL
+                <br><strong>Healthcare Data Standards:</strong> HL7, FHIR, CCDA, X12, V2
+                <br><strong>Additional Skills:</strong> GitHub, JMeter, AI integration with OpenAI's GPT-3.5 API</p>
         </div>
     </section>
 
