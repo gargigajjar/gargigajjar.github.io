@@ -1,0 +1,22 @@
+.introduction p {
+    margin-top: 1vh;
+}
+
+p {
+    font-size: large;
+}
+
+p#intro {
+    margin-top: 5vh;
+}
+
+p#skillsheader {
+    /* text-align: left;*/
+    font-weight: bold;
+    margin-top: 7vh;
+}
+
+p#skills {
+    /* text-align: left;*/
+    font-size: medium;
+}
