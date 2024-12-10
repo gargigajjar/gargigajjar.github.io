@@ -11,13 +11,11 @@ body {
 
 /* Section styling */
 section {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 60px;
   display: flex;
-  /* Allow flexible height */
   flex-direction: column;
-  /* Stack children elements vertically */
-  padding-top: 15vh;
+  padding-top: 10vh;
 }
 
 section#home {
@@ -46,3 +44,4 @@ section#contact {
   background-color: #c8cbcf;
   min-height: 10vh;
 }
+

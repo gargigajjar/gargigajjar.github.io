@@ -10,90 +10,156 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <header>
         <link rel="stylesheet" href="css/NavigrationBar.css">
-        <div class="menu-icon" onclick="toggleMenu()">
-            ☰
-        </div>
-        <ul id="nav-links" class="nav-links hidden">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <script src="js/main.js"></script>
-    <section id="home">
-        <link rel="stylesheet" href="css/Home.css">
-        <h1>Gargi Gajjar</h1>
-        <p>Software Developer</p>
-        <div class="introduction">
-            <p id="intro">I am Gargi Gajjar, a dedicated software developer with a Master’s degree in Computer Science
-                from the University of Massachusetts Lowell. With over five years of professional experience, I have
-                honed my skills in Java, Spring Boot, Docker, AWS, and RDF technologies.
-                I am passionate about developing innovative solutions, from enhancing complex healthcare data
-                transformation tools to integrating AI automation processes that significantly streamline workflows. My
-                background also includes hands-on experience in teaching, mentoring, and project management, fostering
-                an environment of continuous improvement and collaboration.</p>
-            <p id="skillsheader">Key Skills:</p>
-            <p id="skills">
-                <strong>Programming Languages:</strong> Java, C, C++, JavaScript, HTML, CSS
-                <br><strong>Frameworks:</strong> Spring Boot, SWT
-                <br><strong>Technologies:</strong> Docker, AWS (ECS, EC2, ECR, Lambda, S3), Maven, RDF4J, SPARQL, GraphDB
-                <br><strong>Databases:</strong> Oracle, SQL, MySQL
-                <br><strong>Healthcare Data Standards:</strong> HL7, FHIR, CCDA, X12, V2
-                <br><strong>Additional Skills:</strong> GitHub, JMeter, AI integration with OpenAI's GPT-3.5 API</p>
-        </div>
-    </section>
 
-    <section id="projects">
-        <link rel="stylesheet" href="css/Projects.css">
-        <h1>Projects</h1>
-    </section>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <link rel="stylesheet" href="css/Home.css">
+            <h1>Gargi Gajjar</h1>
+            <p>Software Developer</p>
+            <div class="introduction">
+                <p id="intro">Hi, I'm Gargi Gajjar, a passionate software developer with a Master's degree in Computer
+                    Science from the University of Massachusetts Lowell. With over four years of experience, I
+                    specialize in designing and developing scalable cloud-based microservices using Java, Spring Boot,
+                    and Docker. I have a deep understanding of cloud technologies, particularly AWS, where I've deployed
+                    solutions that enhance efficiency and reduce operational overhead.
+                    <br><br>At the core of my work is a commitment to creating innovative solutions that solve
+                    real-world
+                    problems. Whether it's automating healthcare data transformations or integrating OpenAI technologies
+                    to optimize processes, I consistently strive for excellence in every project. My expertise spans a
+                    variety of tools and technologies, including CI/CD pipelines, real-time data streaming with Kafka,
+                    and web application development.
+                    <br><br>In addition to my technical skills, I enjoy collaborating with teams, mentoring, and
+                    managing
+                    projects to successful completion. My approach is both client-focused and technically driven,
+                    ensuring that every solution I develop meets both business and user needs.
+                </p>
+                <p id="skillsheader">Key Skills:</p>
+                <p id="skills">
+                    <strong>Programming Languages:</strong> Java, Python, JavaScript, C, C++
+                    <br><strong>Frameworks:</strong> Spring Boot, SWT, Angular, React
+                    <br><strong>Cloud & DevOps:</strong> AWS (ECS, EC2, ECR, Lambda, S3), Docker, Kubernetes, OpenShift,
+                    Jenkins, Git
+                    <br><strong>Tools:</strong> Maven, RDF4J, GraphDB, JMeter, GitHub
+                    <br><strong>Data & Streaming:</strong> Kafka, Pulsar, SPARQL
+                    <br><strong>Protocols:</strong> REST, gRPC, SOAP, SAML
+                    <br><strong>Web technologies:</strong> HTML, CSS, JavaScript, Bootstrap
+                </p>
+            </div>
+        </section>
 
-    <section id="experience">
-        <link rel="stylesheet" href="css/Experience.css">
-        <h1>Experience</h1>
-    </section>
+        <section id="projects">
+            <link rel="stylesheet" href="css/Projects.css">
+            <h1>Projects</h1>
+            <div class="projectdiv">
+                <div>
+                    <br>
+                    <h3>Work Projects:</h3>
+                    <p>
+                        <strong>Healthcare Data Transformation Platform:</strong>
+                        <br>Technologies: Java, Spring Boot, Docker, AWS (ECS, S3), Maven, RDF4J, GraphDB
+                        <br>
+                    <ul class="listbullets">
+                        <li>Developed a microservice to automate data transformation between healthcare standards such
+                            as
+                            HL7 and FHIR using Java and Spring Boot.</li>
+                        <li>Deployed the service on AWS ECS, integrating it with GraphDB for RDF storage and retrieval.
+                        </li>
+                        <li>Streamlined the transformation process, enabling healthcare organizations to convert data
+                            between standards seamlessly. </li>
+                    </ul>
+                    </p>
 
-    <section id="contact">
-        <link rel="stylesheet" href="css/Contacts.css">
-        <h1>Contact Me</h1>
+                    <p>
+                        <br><strong>Real-Time Healthcare Data Streaming:</strong>
+                        <br>Technologies: Kafka, Java, Docker, AWS Lambda, AWS S3
+                        <br>
+                    <ul class="listbullets">
+                        <li>Built a real-time data pipeline using Kafka for streaming patient records across healthcare
+                            systems.</li>
+                        <li>Used AWS Lambda to process real-time events and store the results in S3, allowing healthcare
+                            providers to access up-to-date patient data.</li>
+                        <li>Deployed using Docker for scalable, containerized services, ensuring efficient data flow and
+                            compliance with healthcare standards.</li>
+                    </ul>
+                    </p>
 
-        <div class="contact-icons">
-            <div class="contact-item">
-                <a href="tel:6035572351">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+1 (603) 557 - 2351</p>
-                </a>
+                    <p>
+                        <br><strong>FHIR API and Web Interface:</strong>
+                        <br>Technologies: Angular, Java, Spring Boot, REST, AWS (EC2, S3)
+                        <br>
+                    <ul class="listbullets">
+                        <li>Developed an interactive Angular web application for healthcare providers to query patient
+                            records using FHIR APIs
+                            built with Spring Boot.</li>
+                        <li>Deployed the solution on AWS EC2, utilizing S3 for storing static assets, and ensured secure
+                            communication with
+                            patient records.</li>
+                        <li>Optimized REST API performance for real-time access to healthcare data, improving response
+                            times by 25%.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div>
+                    <br>
+                    <h3>Fun Projects:</h3>
+                </div>
             </div>
-            <div class="contact-item">
-                <a href="mailto:gargibgajjar2398@gmail.com?subject=Job Opportunity">
-                    <i class="fas fa-envelope"></i>
-                    <p>gargibgajjar2398@gmail.com</p>
-                </a>
-            </div>
-            <div class="contact-item">
-                <a target="tab" href="https://maps.app.goo.gl/NAqssLr6mxQScgjz9">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Methuen, Massachusetts, USA</p>
-                </a>
-            </div>
-            <div class="contact-item">
-                <a href="https://www.linkedin.com/in/gargi-gajjar/" target="tab">
-                    <i class="fab fa-linkedin"></i>
-                    <p>LinkedIn</p>
-                </a>
-            </div>
-            <div class="contact-item">
-                <a href="https://github.com/gargigajjar" target="tab">
-                    <i class="fa-brands fa-github"></i>
-                    <p>GitHub</p>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
+        <section id="experience">
+            <link rel="stylesheet" href="css/Experience.css">
+            <h1>Experience</h1>
+        </section>
+
+        <section id="contact">
+            <link rel="stylesheet" href="css/Contacts.css">
+            <h1>Contact Me</h1>
+
+            <div class="contact-icons">
+                <div class="contact-item">
+                    <a href="tel:6035572351">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+1 (603) 557 - 2351</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:gargibgajjar2398@gmail.com?subject=Job Opportunity">
+                        <i class="fas fa-envelope"></i>
+                        <p>gargibgajjar2398@gmail.com</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a target="tab" href="https://maps.app.goo.gl/NAqssLr6mxQScgjz9">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Methuen, Massachusetts, USA</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/gargi-gajjar/" target="tab">
+                        <i class="fab fa-linkedin"></i>
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/gargigajjar" target="tab">
+                        <i class="fa-brands fa-github"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 <footer>
     <p class="copyright-text">© Copyright 2024 Gargi Gajjar </p>
