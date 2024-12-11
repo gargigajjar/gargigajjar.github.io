@@ -6,6 +6,150 @@ p {
     font-size: large;
 }
 
-.listbullets li{
+.listbullets li {
     margin-left: 1vw;
 }
+
+/* Overall Section Styling */
+#portfolio-videos {
+    padding: 20px;
+}
+
+/* Flexbox for Layout */
+.video-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.video-item p {
+    flex: 1;
+    font-size: 1.1em;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.video-container {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Styling */
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+/* Overlay Effect */
+.video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Hover Effect */
+.video-container:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.video-container:hover::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-item p {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .video-container {
+        max-width: 100%;
+    }
+}
+
+.divider {
+    width: 80%;
+    height: 2px;
+    margin: 20px auto;
+    background: linear-gradient(to right, #ddd, #444, #ddd);
+    border: none;
+}
+
+#additional-videos {
+    padding: 20px;
+    text-align: center;
+    background-color: #d4d6d8;
+    border-radius: 20px;
+  }
+  
+  #additional-videos h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Video Row Layout */
+  .video-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  /* Video Container */
+  .video-row .video-container2 {
+    width: 22%; /* Each video takes about 1/4 of the row */
+    max-width: 250px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .video-row iframe {
+    width: 100%;
+    height: 140px;
+    border: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .video-row .video-container2 {
+      width: 45%; /* Videos stack in rows of 2 on smaller screens */
+    }
+  
+    .video-row iframe {
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .video-row .video-container2 {
+      width: 100%; /* Videos stack in a single column on very small screens */
+    }
+  
+    .video-row iframe {
+      height: 180px;
+    }
+  }
